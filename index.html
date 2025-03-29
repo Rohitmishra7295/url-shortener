@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+
+
+  <!-- for custom scrollbar -->
+  <style>
+    /* Scrollbar Width */
+    ::-webkit-scrollbar {
+      width: 12px; /* Reduced width for a more subtle look */
+    }
+  
+    /* Scrollbar Track (Background) */
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1; /* Light gray background */
+      border-radius: 10px;
+      box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    }
+  
+    /* Scrollbar Handle (Thumb) */
+    ::-webkit-scrollbar-thumb {
+      background: #007bff; /* Classic blue color */
+      border-radius: 10px;
+      border: 3px solid #f1f1f1; /* Border to make it look more defined */
+      transition: background-color 0.3s ease; /* Smooth transition on hover */
+    }
+  
+    /* Scrollbar Handle (Thumb) on Hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #0056b3; /* Darker blue on hover for better contrast */
+    }
+  
+    /* Scrollbar Handle (Thumb) on active (click) */
+    ::-webkit-scrollbar-thumb:active {
+      background: #003366; /* Even darker blue when actively dragging */
+    }
+  </style>
+  
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
